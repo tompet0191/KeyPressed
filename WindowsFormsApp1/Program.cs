@@ -19,10 +19,10 @@ namespace KeyPressed
 
             while (true)
             {
-                //true så visas inte tryckt tangent
+                //true to suppressed key in console window
                 keyInfo = Console.ReadKey(true);
 
-                //Lägger till Shift-, Alt- etc om modifierande knappar tryckts ner.
+                //Adding Shift-, Alt- etc if any modifiers was pushed
                 string mod = (keyInfo.Modifiers != 0) ? keyInfo.Modifiers.ToString() + "-" : "";
 
                 Console.WriteLine(((int)keyInfo.KeyChar).ToString().PadLeft(4, '0') + " '" + keyInfo.KeyChar + "'" + "  " + mod + keyInfo.Key.ToString());
