@@ -11,7 +11,6 @@ namespace KeyPressed
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main()
         {
             Console.TreatControlCAsInput = true;
